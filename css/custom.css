@@ -6,11 +6,25 @@ body {
   min-height: 240px;
 }
 
-.placeholder-image {
-  min-height: 320px;
+/* Стили для карточек товаров */
+.product-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.card-img-top {
-  height: 180px;
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.product-card .card-img-top {
+  height: 220px;
   object-fit: cover;
+}
+
+/* Стили для детальной страницы товара */
+.product-detail-img {
+  max-height: 500px;
+  object-fit: contain;
+  padding: 1rem;
+  background-color: #f8f9fa;
 }
