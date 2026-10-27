@@ -7,36 +7,31 @@
 Проект представляет собой учебную версию сайта интернет-магазина или каталога товаров,
 разработанную с использованием Bootstrap.
 
-## Практическая работа №9
+## Используемый фреймворк
 
-Выполнена главная страница на Bootstrap-сетке.
+Bootstrap 5.3.3.
 
-Реализовано:
+## Способ подключения Bootstrap
 
-- создан отдельный репозиторий `kr2-bootstrap-shop`;
-- подключён Bootstrap через CDN;
-- подключён собственный файл `css/custom.css`;
-- создана шапка страницы;
-- добавлена Bootstrap-навигация;
-- создан hero-блок на сетке;
-- создан блок преимуществ;
-- создана сетка популярных товаров;
-- добавлен подвал страницы.
+Bootstrap подключён через CDN.
 
-## Используемые технологии
+Используются:
 
-- HTML;
-- CSS;
-- Bootstrap 5;
-- Git;
-- GitHub.
+- `https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css`;
+- `https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js`.
+
+Собственный файл `css/custom.css` подключён после Bootstrap CSS.
 
 ## Структура проекта
 
 ```text
 kr2-bootstrap-shop/
 ├── index.html
+├── catalog.html
+├── product.html
+├── order.html
 ├── css/
 │   └── custom.css
+├── images/
 ├── README.md
 └── .gitignore
