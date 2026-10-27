@@ -3,59 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Товар – Bootstrap Shop</title>
-
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+  <title>Смарт-часы Pulse Pro – Bootstrap Shop</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="bg-light">
+
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">Bootstrap Shop</a>
-
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNavbar"
-        aria-controls="mainNavbar"
-        aria-expanded="false"
-        aria-label="Переключить навигацию"
-      >
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Переключить навигацию">
         <span class="navbar-toggler-icon"></span>
       </button>
-
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="catalog.html">Каталог</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="product.html">Товар</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="order.html">Заявка</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+          <!-- Выпадающее меню со всеми товарами -->
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Дополнительно
-            </a>
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Товары</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
-              <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
-              <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+              <li><a class="dropdown-item active" href="product.html">Смарт-часы Pulse Pro</a></li>
+              <li><a class="dropdown-item" href="product-2.html">Наушники Bass Air</a></li>
+              <li><a class="dropdown-item" href="product-3.html">Колонка SoundGo</a></li>
             </ul>
           </li>
         </ul>
@@ -68,39 +39,30 @@
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
         <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
-        <li class="breadcrumb-item active" aria-current="page">Товар 1</li>
+        <li class="breadcrumb-item active" aria-current="page">Смарт-часы Pulse Pro</li>
       </ol>
     </nav>
 
     <div class="row g-4">
       <div class="col-12 col-lg-6">
         <div class="card shadow-sm">
-          <div
-            class="placeholder-image bg-light border rounded d-flex align-items-center justify-content-center"
-          >
-            <span class="text-muted">Изображение товара</span>
-          </div>
+          <img src="images/product-1.jpg" class="card-img-top product-detail-img" alt="Смарт-часы Pulse Pro">
         </div>
       </div>
-
+      
       <div class="col-12 col-lg-6">
         <span class="badge bg-success mb-3">Новинка</span>
-        <h1 class="h2">Товар 1</h1>
-        <p class="lead text-muted">
-          Подробное описание учебного товара для страницы карточки.
-        </p>
-        <p class="fs-3 fw-bold">1000 руб.</p>
+        <h1 class="h2">Смарт-часы Pulse Pro</h1>
+        <p class="lead text-muted">Фитнес-трекер, AMOLED-экран, до 14 дней автономной работы.</p>
+        <p class="fs-3 fw-bold">12 990 ₽</p>
 
         <div class="d-flex gap-2 mb-4">
-          <a class="btn btn-primary btn-lg" href="order.html">Оформить заявку</a>
-          <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
-            Назад в каталог
-          </a>
+          <a href="order.html" class="btn btn-primary btn-lg">Оформить заявку</a>
+          <a href="catalog.html" class="btn btn-outline-secondary btn-lg">Назад в каталог</a>
         </div>
 
         <div class="alert alert-warning" role="alert">
-          Это учебная карточка товара. Данные используются для демонстрации
-          Bootstrap-компонентов.
+          Это учебная карточка товара. Данные используются для демонстрации Bootstrap-компонентов.
         </div>
       </div>
     </div>
@@ -110,76 +72,40 @@
       <div class="table-responsive">
         <table class="table table-striped table-bordered align-middle">
           <tbody>
-            <tr>
-              <th scope="row">Артикул</th>
-              <td>SHOP-001</td>
-            </tr>
-            <tr>
-              <th scope="row">Категория</th>
-              <td>Учебные товары</td>
-            </tr>
-            <tr>
-              <th scope="row">Производитель</th>
-              <td>Bootstrap Shop</td>
-            </tr>
-            <tr>
-              <th scope="row">Наличие</th>
-              <td>В наличии</td>
-            </tr>
+            <tr><th scope="row">Артикул</th><td>SHOP-SM-001</td></tr>
+            <tr><th scope="row">Категория</th><td>Смарт-часы</td></tr>
+            <tr><th scope="row">Экран</th><td>AMOLED, 1.43 дюйма</td></tr>
+            <tr><th scope="row">Автономность</th><td>До 14 дней</td></tr>
+            <tr><th scope="row">Влагозащита</th><td>5 ATM</td></tr>
+            <tr><th scope="row">Производитель</th><td>Pulse Tech</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section class="container my-5">
-      <h2 class="h4 mb-3">Частые вопросы</h2>
-
-      <div class="accordion" id="faqAccordion">
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button
-              class="accordion-button"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faqOne"
-              aria-expanded="true"
-              aria-controls="faqOne"
-            >
-              Как оформить заявку на товар?
-            </button>
-          </h3>
-          <div
-            id="faqOne"
-            class="accordion-collapse collapse show"
-            data-bs-parent="#faqAccordion"
-          >
-            <div class="accordion-body">
-              Перейдите на страницу «Заявка» и заполните форму. Поля со звёздочкой
-              обязательны.
+    <!-- Блок "Другие товары" -->
+    <section class="mt-5 border-top pt-4">
+      <h2 class="h4 mb-4">Другие товары</h2>
+      <div class="row g-4">
+        <div class="col-12 col-md-6">
+          <div class="card h-100 shadow-sm product-card">
+            <img src="images/product-2.jpg" class="card-img-top" alt="Наушники Bass Air" style="height: 200px;">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5"><a href="product-2.html" class="text-decoration-none text-dark">Наушники Bass Air</a></h3>
+              <p class="text-muted small mb-3">Активное шумоподавление, Bluetooth 5.3.</p>
+              <p class="fw-bold mt-auto mb-2">7 490 ₽</p>
+              <a href="product-2.html" class="btn btn-outline-primary btn-sm">Перейти</a>
             </div>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h3 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#faqTwo"
-              aria-expanded="false"
-              aria-controls="faqTwo"
-            >
-              Можно ли заказать несколько товаров?
-            </button>
-          </h3>
-          <div
-            id="faqTwo"
-            class="accordion-collapse collapse"
-            data-bs-parent="#faqAccordion"
-          >
-            <div class="accordion-body">
-              Да, укажите нужные товары в комментарии к заявке.
+        <div class="col-12 col-md-6">
+          <div class="card h-100 shadow-sm product-card">
+            <img src="images/product-3.jpg" class="card-img-top" alt="Колонка SoundGo" style="height: 200px;">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h5"><a href="product-3.html" class="text-decoration-none text-dark">Колонка SoundGo</a></h3>
+              <p class="text-muted small mb-3">Влагозащита IPX7, 20 Вт, 12 часов работы.</p>
+              <p class="fw-bold mt-auto mb-2">5 990 ₽</p>
+              <a href="product-3.html" class="btn btn-outline-primary btn-sm">Перейти</a>
             </div>
           </div>
         </div>
@@ -201,8 +127,6 @@
     </div>
   </footer>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-  ></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
