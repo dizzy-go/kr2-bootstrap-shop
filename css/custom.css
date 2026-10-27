@@ -6,7 +6,10 @@ body {
   min-height: 240px;
 }
 
-/* Стили для карточек товаров */
+.placeholder-image {
+  min-height: 320px;
+}
+
 .product-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -17,14 +20,16 @@ body {
 }
 
 .product-card .card-img-top {
-  height: 220px;
-  object-fit: cover;
+  height: 250px;
+  object-fit: contain;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
 }
 
-/* Стили для детальной страницы товара */
 .product-detail-img {
   max-height: 500px;
+  width: 100%;
   object-fit: contain;
-  padding: 1rem;
+  padding: 2rem;
   background-color: #f8f9fa;
 }

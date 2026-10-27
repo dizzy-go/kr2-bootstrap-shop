@@ -3,6 +3,8 @@
 > ### 👤 Тихомиров Иван Русланович
 > 🎓 **Группа:** ЭФБО-06-25  
 > 🔗 **Репозиторий:** [github.com/dizzy-go/kr2-bootstrap-shop](https://github.com/dizzy-go/kr2-bootstrap-shop)  
+**Опубликованная версия (GitHub Pages):** [https://dizzy-go.github.io/kr2-bootstrap-shop/](https://dizzy-go.github.io/kr2-bootstrap-shop/)
+
 
 **Тема:** «CSS-фреймворки: разработка интерфейса на Bootstrap или альтернативном CSS-фреймворке».
 
